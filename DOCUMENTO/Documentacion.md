@@ -17,6 +17,6 @@ Por otra parte personas que estén interesadas en aprender  a preparar la varied
 ## 3.Casos de Uso
 ![Caso de uso de sistemas](CDU.png)
 ## 4. Maqueta de Proyecto
-![Maqueta de proyecto](Maqueta1.png)
-![Maqueta de proyecto](Maqueta2.png)
+![Maqueta de proyecto](maqueta1.png)
+![Maqueta de proyecto](maqueta2.png)
 
