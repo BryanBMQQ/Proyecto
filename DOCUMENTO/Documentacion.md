@@ -17,10 +17,15 @@ Por otra parte personas que estén interesadas en aprender  a preparar la varied
 ## 3.Casos de Uso
 ![Caso de uso de sistemas](CDU.png)
 ## 4. Maqueta de Proyecto
+<<<<<<< HEAD
 
 ### Pagina Principal
 ![Maqueta1 Pag Main](maqueta1.png)
 
 ### Pagina de cuenta de Usuario
 ![Maqueta2 pag de User](maqueta2.png)
+=======
+![Maqueta de proyecto](maqueta1.png)
+![Maqueta de proyecto](maqueta2.png)
+>>>>>>> a2deed382723f2de9906ce5ffa01b04e88327fd8
 
