@@ -1,0 +1,36 @@
+
+    
+Lista de servicios
+
+
+
+//Usuario
+
+GET http://localhost/UBI/Proyecto/api/usuario.php?id=:id
+
+POST http://localhost/UBI/Proyecto/api/usuario.php
+
+PUT http://localhost/UBI/Proyecto/api/usuario.php?id=:id
+
+PATCH http://localhost/UBI/Proyecto/api/usuario.php?id=:id&campo=:caMpo
+
+DELETE http://localhost/UBI/Proyecto/api/usuario.php?id=:id
+
+POST http://localhost/UBI/Proyecto/api/usuario.php?metodo=login
+
+
+
+//Recetas
+GET http://localhost/UBI/Proyecto/api/recetas.php
+
+POST http://localhost/UBI/Proyecto/api/recetas.php
+
+DELETE http://localhost/UBI/Proyecto/api/recetas.php?id=:id
+
+PUT http://localhost/UBI/Proyecto/api/recetas.php?id=:id
+
+//Categoria 
+
+GET http://localhost/UBI/Proyecto/api/categoria.php
+
+POST http://localhost/UBI/Proyecto/api/categoria.php

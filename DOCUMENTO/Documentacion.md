@@ -17,15 +17,50 @@ Por otra parte personas que estén interesadas en aprender  a preparar la varied
 ## 3.Casos de Uso
 ![Caso de uso de sistemas](CDU.png)
 ## 4. Maqueta de Proyecto
-<<<<<<< HEAD
 
 ### Pagina Principal
 ![Maqueta1 Pag Main](maqueta1.png)
 
 ### Pagina de cuenta de Usuario
 ![Maqueta2 pag de User](maqueta2.png)
-=======
-![Maqueta de proyecto](maqueta1.png)
-![Maqueta de proyecto](maqueta2.png)
->>>>>>> a2deed382723f2de9906ce5ffa01b04e88327fd8
+### 5.Modelado de Base de Datos
+![modelo BD](BD.jpg)
+### Modelo con Datos y variables
+![modelo con datos](Base_datos.png)
+### Servicios
+
+Lista de servicios
+
+
+
+### Usuario
+
+GET http://localhost/UBI/Proyecto/api/usuario.php?id=:id
+
+POST http://localhost/UBI/Proyecto/api/usuario.php
+
+PUT http://localhost/UBI/Proyecto/api/usuario.php?id=:id
+
+PATCH http://localhost/UBI/Proyecto/api/usuario.php?id=:id&campo=:caMpo
+
+DELETE http://localhost/UBI/Proyecto/api/usuario.php?id=:id
+
+POST http://localhost/UBI/Proyecto/api/usuario.php?metodo=login
+
+
+
+//Recetas
+GET http://localhost/UBI/Proyecto/api/recetas.php
+
+POST http://localhost/UBI/Proyecto/api/recetas.php
+
+DELETE http://localhost/UBI/Proyecto/api/recetas.php?id=:id
+
+PUT http://localhost/UBI/Proyecto/api/recetas.php?id=:id
+
+//Categoria 
+
+GET http://localhost/UBI/Proyecto/api/categoria.php
+
+POST http://localhost/UBI/Proyecto/api/categoria.php
 
