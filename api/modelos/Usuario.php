@@ -1,5 +1,5 @@
 <?php
-include_once('./cnxPDO.php');
+include_once('cnxPDO.php');
      class Usuario {
          private $nombre;
          private $username;
@@ -32,8 +32,16 @@ include_once('./cnxPDO.php');
         }
         function obtUsuario(){
             echo "Lista usuarios...";
-           
-        }
+            $c = new CnxPDO();
+            $q ="SELECT id_usuario, nombre, username, password FROM usuario";
+            echo $q;
+            $consulta = $c->getCnx()->prepare($q);
+            $consulta->execute();
+            var_dump($consulta);
+
+            $resultado = $consulta->fetchALL(PDO::FETCH_OBJ);
+            echo json_encode($resultado);
+        }   
         function inUsuario(){
             echo "Inserta usuarios...";
         }

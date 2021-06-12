@@ -1,10 +1,10 @@
 <?php
 header('Content-type: application/json');
 include_once('./modelos/Usuario.php');
+include_once('./config/parametros.php');
 $u = new Usuario();
 switch($_SERVER["REQUEST_METHOD"]){
-    case 'GET':
-        echo 'Obtener usuario';
+    case 'GET':   
         $u = new Usuario();
         $u->obtUsuario();
         break;
