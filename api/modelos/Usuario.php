@@ -34,7 +34,7 @@ include_once('cnxPDO.php');
             echo "Lista usuarios...";
             $c = new CnxPDO();
             $q ="SELECT id_usuario, nombre, username, password FROM usuario";
-            echo $q;
+            echo $_POST;
             $consulta = $c->getCnx()->prepare($q);
             $consulta->execute();
             var_dump($consulta);
@@ -43,7 +43,27 @@ include_once('cnxPDO.php');
             echo json_encode($resultado);
         }   
         function inUsuario(){
-            echo "Inserta usuarios...";
+          $q = 'INSERT INTO usuario (nombre, username, password) values (:nombre, :username, MD5(:password));';
+          try{
+              echo $_POST['nombre'].'...';
+          $c = new CnxPDO();
+          $consulta =$c->getCnx()->prepare($q);
+         
+          $consulta->bindParam(':nombre',$_POST['nombre'],PDO::PARAM_STR);
+          $consulta->bindParam(':username',$_POST['username'],PDO::PARAM_STR);
+          $consulta->bindParam(':password',$_POST['password'],PDO::PARAM_STR);
+          var_dump($consulta);
+          $consulta->execute();
+
+          $msg = array(data => $c->getCnx()->lastInsertId());
+          echo json_encode($msg);  
+        }
+        catch(PDOException $e){
+            $msg = array(msg=>"Error al ejecutar INSERT");
+            echo json_encode($msg);
+
+        }
+               
         }
         function actUsuario(){
             echo "Actualizar usuarios...";

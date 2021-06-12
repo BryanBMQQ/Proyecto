@@ -9,7 +9,9 @@ switch($_SERVER["REQUEST_METHOD"]){
         $u->obtUsuario();
         break;
     case 'POST':
-        echo 'Insertar usuario';
+        $v = file_get_contents('php://input');
+        $_POST = json_decode($v, true);
+        var_dump($_POST);
         $u = new Usuario();
         $u->inUsuario();
         break;

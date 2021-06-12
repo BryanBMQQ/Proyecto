@@ -64,3 +64,4 @@ GET http://localhost/UBI/Proyecto/api/categoria.php
 
 POST http://localhost/UBI/Proyecto/api/categoria.php
 
+
